@@ -1,0 +1,11 @@
+.card {
+    margin: 16px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+.card img {
+    border-radius: 8px;
+}
+.card-title {
+    font-size: 1.2em;
+    margin: 8px 0;
+}
