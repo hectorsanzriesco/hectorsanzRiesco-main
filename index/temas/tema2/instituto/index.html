@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen y Texto a la Derecha</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS externo -->
+</head>
+
+<body>
+
+    <!-- Navbar con logo y opciones desplegables en móviles -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Offcanvas navbar large">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./logo.png" alt="Logo Zapatería" style="width: 50px; height: auto;">
+                Instituto IES Julian
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+                aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2"
+                aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menú</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Novedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hombre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mujer</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3 mt-lg-0" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenedor de la imagen de Erasmus -->
+    <div class="contenedor-imagen-texto">
+        <div class="texto">
+            <h2>Erasmus + para alumnos de FP</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare quis lectus vitae hendrerit.
+                Pellentesque a orci diam. Vivamus vehicula libero felis, non vulputate metus vulputate a. Mauris congue
+                id lacus at varius. Vestibulum vitae molestie orci. Nullam et molestie justo. Morbi nec lobortis ipsum.
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent
+                sollicitudin lacinia elit vel porta.</p>
+        </div>
+        <!-- Imagen de Erasmus más pequeña -->
+        <img src="./erasmus.jpeg" alt="Imagen Erasmus" class="img-fluid" style="max-width: 40%; height: auto;">
+    </div>
+
+    <!-- Nueva sección: Imagen y texto después de la imagen de Erasmus -->
+    <div class="contenedor-imagen-texto d-flex align-items-center mt-4">
+        <!-- Nueva imagen a la izquierda (más pequeña) -->
+        <img src="./entrada-salida.jpeg" alt="Imagen Alternativa" class="img-fluid" style="max-width: 40%; margin-right: 20px;">
+        
+        <!-- Texto a la derecha -->
+        <div class="texto" style="max-width: 50%;">
+            <h2>Beneficios del Erasmus +</h2>
+            <p>Participar en un programa Erasmus + no solo mejora tus habilidades académicas, sino también tu crecimiento personal y profesional. Durante tu experiencia internacional, podrás conocer diferentes culturas, ampliar tu red de contactos y mejorar tu empleabilidad en un mercado global.</p>
+        </div>
+    </div>
+
+    <!-- Mapa de Google Maps (Cómo llegar al instituto) -->
+    <div class="mapa-container">
+        <h2>¿Cómo llegar al Instituto?</h2>
+        <div class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2980.5786366529887!2d-4.726064686980647!3d41.66484517114639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd470d55e3273467%3A0xb3fd8e57a6131b03!2sIES%20Ribera%20de%20Castilla!5e0!3m2!1ses!2ses!4v1731499239452!5m2!1ses!2ses"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start mt-5 py-4">
+        <div class="container p-4">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p>&copy; 2024 Zapatería | Todos los derechos reservados.</p>
+                    <p>Dirección: Calle Ejemplo 123, Ciudad, País</p>
+                    <p>Contacto: contacto@zapateria.com</p>
+                    <div class="social-media">
+                        <!-- Íconos de redes sociales usando Font Awesome -->
+                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjXk9bmqtmJAxV0VfEDHeuOKUgQFnoECAwQAQ&url=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_ES&usg=AOvVaw1hWFr2j6cc5grAPtvNHanb&opi=89978449" class="text-decoration-none mx-2" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjf6dPqqtmJAxVmBNsEHeAPKz8QFnoECAoQAQ&url=https%3A%2F%2Ftwitter.com%2F%3Flang%3Des&usg=AOvVaw3YX5z3gmuFXXOazOkLuKS1&opi=89978449" class="text-decoration-none mx-2" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjliqvuqtmJAxUDSPEDHZG3B6AQFnoECAsQAQ&url=https%3A%2F%2Fwww.instagram.com%2F&usg=AOvVaw1cBeRoOpMhZ3-x5M1sA3Fm&opi=89978449" class="text-decoration-none mx-2" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
